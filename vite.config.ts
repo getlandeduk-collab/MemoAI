@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { threeMinifier } from '@yushijinhun/three-minifier-rollup'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    { ...threeMinifier(), enforce: 'pre' },
     react()
   ],
   optimizeDeps: {
