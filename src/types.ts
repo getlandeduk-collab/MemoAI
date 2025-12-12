@@ -19,6 +19,7 @@ export interface Task {
     description?: string;
     status: 'todo' | 'in_progress' | 'done';
     createdAt: string;
+    dueDate?: string;
 }
 
 export interface DocumentInfo {
